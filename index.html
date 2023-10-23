@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--CSS padrao -->
+    <link rel="stylesheet" type="text/css" href="style1.css"/>  
+</head>
+<body>
+
+<div class="container wrapper">
+  <div id="top">
+    <h1>Eu sou Yann Moraes Ligeiro</h1>
+    <!--<p>Menu</p>-->
+  </div>
+  <div class="wrapper">
+         <!--Menu-->
+        <div id="menubar">
+            <ul id="menulist">
+            <li class="menuitem"><a href="#inicio">Inicio</a>
+            <li class="menuitem"><a href="#Formacao">Formacao</a>
+            <li class="menuitem"><a href="#Projetos">Projetos</a>
+            <li class="menuitem"><a href="#Contato">Contato</a>
+            <li class="menuitem" onclick="changeStyle()">Trocar estilo
+            </ul>
+        </div>
+            <!--Conteudo-->
+            <div id="main">
+                <section id="inicio"> 
+                    <h1>Quem sou eu?</h1>
+                        <img src="/fotoperfil.jpg">
+                    <p>Experiência de um ano como Basis / Netweaver SAP. Dois anos em modelagem ecológica, com aplicabilidade do modelo Penna. Vivência laboratorial com triagem e identificação de invertebrados e proteômica de biofluidos de aracnídeos. Prática na elaboração de relatórios e estudos ambientais. Sou Analista de sistemas pela UNINTER (2023 - Atual), Biólogo formado pelo Centro universitário Una (dez/2020), técnico em informática pelo colégio Cotemig (dez/2016). Tenho conhecimento avançado em programação, Machine learning, Windows e Linux, pacote Office e certificação em inglês avançado pelo intercâmbio na Whittier College em 2012. </p>
+                    <h2>Missao</h2>
+                    <p>Buscar oportunidade para desenvolver, aprimorar, e me qualificar profissionalmente, ao aplicar meus conhecimentos sociais, técnicos e acadêmicos.</p>
+                    <h2>Vissao</h2>
+                    <p>Mudar o mundo com as minhas habilidades e unir as pessoas por um mundo melhor.</p>
+                    <h2>Valores</h2>
+                    <p>Transparencia, Criatividade, Equilibrio, Sustentabilidade, Inovacao e Pontualidade.</p>
+                    <h2>Hobbies</h2>
+                    <p>Leitura, calistenia, patinacao e video games</p>
+                </section>
+            
+            
+            <br><br>
+            <section id="Formacao">
+                <h1>Formacao</h1>
+                <h3>UNINTER</h3>
+                <p>Analise e desenvolvimento de sistemas - 2023 cursando.</p>
+                <h3>CENTRO UNIVERSITÁRIO UNA</h3>
+                <p>Bacharelado em Ciências Biológicas - 2017 A 2020.</p>
+                <h3>COLÉGIO COTEMIG</h3>
+                <p>Ensino médio e técnico em informática - 2014 A 2016.</p>
+                <h2>Idiomas</h2>
+                <h3>UFMG/CENEX</h3>
+                <p>Alemão Básico - 2015.</p>
+                <h3>FISK</h3>
+                <p>Inglês Avançado - 2008 A 2015.</p>
+            </section>
+            
+            <section id="Projetos">
+                <br><br>
+                <h1>Projetos</h1>
+                <h3>Model of Biological dynamics base on individuals (C++)</h3>
+                <p>The present model is based on the premise developed by Penna¹, the bit strings, for individuals's aging.
+        
+                This project is an update of the model developed by Keesen et al². by exploring a new conception of virtual spaces that simulate fragmented areas.
+                
+                As for the technology used in the development was the C++ programming language, architected with the object-oriented paradigm being the focus of the algorithm the individual.
+                
+                References:
+                
+                [1] Penna, T. J. (1995). A Bit-String Model for Biological Aging. Journal of Statistical Physics8:162–1633
+                
+                [2] Keesen, F. et al.(2017). Simulations of populations of Sapajus robustus in a fragmented landscape. Ecological Modelling344: 38– 47.<a href="https://www.sciencedirect.com/science/article/pii/S0304380016306627">https://www.sciencedirect.com/science/article/pii/S0304380016306627</a></p>
+                <h3>Publicacoes</h3>
+                <h4>Ecological Modelling</h4>
+                <p>Article: NEW APPLICATIONS OF AN OLD INDIVIDUAL BASED MODEL FOR BIOLOGICAL DYNAMICS – 2023.<a href="https://dx.doi.org/10.1016/j.ecolmodel.2022.110234"> DOI: https://dx.doi.org/10.1016/j.ecolmodel.2022.110234</a></p>
+        
+                <h4>ANNUAL MEETING OF THE ASSOCIATION FOR TROPICAL BIOLOGY AND CONSERVATION (ATBC)</h4>
+                <p>Poster: COMPUTER SIMULATION OF THE DEMOGRAPHIC EFFECTS OF SEXUAL DISPERSAL – 2022.</p>
+        
+                <h4>DYNAMICAL SYSTEMS APPLIED TO BIOLOGY AND NATURAL SCIENCES (DSABNS)</h4>
+                <p>Poster: ALPHA MALE EFFECT ON GROUP POPULATION DYNAMICS – 2022</p>
+            </section>
+            
+            <section id="Contato">
+                <br><br>
+            <h1>Entre em contato</h1>
+            <form name="meu_form">
+            
+                <input type="text" id="nomeid" placeholder="Seu nome" required="required" name="nome" />
+                
+                <input type="cel" id="foneid" placeholder="(xx)xx-xx-xx-xx" name="fone" />
+                
+                <input type="email" id="emailid" placeholder="seuemail@mail.com" name="email" />
+                <textarea placeholder="Sua mensagem"></textarea>
+                <button type="button" onclick="enviar()">Enviar</button>
+            </form>
+            </section>
+                
+        </div>
+        <!--Barra lateral (Rede sociais)-->
+        <div id="sidebar">
+        <h3>Redes sociais</h3>
+        <p><a href="https://www.linkedin.com/in/yannligeiro">Linkedin</a></p>
+        <p><a href="https://github.com/YannML">GitHub</a></p>
+        <p><a href="https://www.instagram.com/yann.ligeiro/">Instagram</a></p>
+        </div>
+        
+    </div>
+    <!--Rodape-->
+    <div id="bottom">
+    Copyright 2023 - Todos os direitos reservados a Yann M. Ligeiro 
+    </div> 
+</div>
+<!--Script do formulario e da troca do estilo-->
+<script src="script.js"></script> 
+</body>
+</html>
